@@ -1,0 +1,40 @@
+.container {
+  width: 1200px;
+
+  .head {
+    width: 80%;
+  }
+}
+
+/*
+* 属性嵌套
+ */
+
+.main {
+  font: {
+    size: 20px;
+    weight: 500;
+  }
+}
+
+//父级选择器
+
+.main {
+  a {
+    color: red;
+
+    &:hover {
+      color: #ccc;
+    }
+  }
+}
+
+// 换个思路也可以使用&进行选择器名称拼接
+
+.main {
+  color: black;
+
+  &--active {
+    color: red;
+  }
+}

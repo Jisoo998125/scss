@@ -1,0 +1,16 @@
+$-bs-alert-button-color: red;
+$-bs-alert-button-background: blue;
+$-bs-alert-button-font-size: 24px;
+
+.container {
+  $height: 500px;
+  $margin-top: 12px !global;
+  height: $height;
+  color: $-bs-alert-button-color;
+}
+
+.footer {
+  font-size: $-bs-alert-button-font-size;
+  //height: $height; //error
+  margin-top: $margin-top;
+}
